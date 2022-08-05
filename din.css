@@ -10,6 +10,7 @@ body{
 }
 
 .container{
+    width: fit-content;
     display: flex;
     flex-direction: column;
     
@@ -25,13 +26,11 @@ body{
 }
 .sidebar ul{
     margin: 0px;
-    
-    padding-left: 650px;
+    display: flex;
     padding-top:8px;
 }
 .sidebar ul li{
     list-style: none;
-    float: left;
 }
 .sidebar a{
     text-Decoration: none;
@@ -293,6 +292,9 @@ body{
     margin: 0px 200px;
     color: wheat;
 
+}
+form{
+    width: fit-content;
 }
 .dtls input{
    padding: 10px 0px;
