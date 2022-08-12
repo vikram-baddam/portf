@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-    width: fit-content;
+   /* width: fit-content;*/
     display: flex;
     flex-direction: column;
     
@@ -22,12 +22,13 @@ body{
     background-color: rgb(41, 64, 65);
     height: 35px;
     width:100%;
-    position:fixed;
+    /*position:fixed;*/
 }
 .sidebar ul{
     margin: 0px;
     display: flex;
     padding-top:8px;
+    padding-left: 0px;
 }
 .sidebar ul li{
     list-style: none;
@@ -52,8 +53,8 @@ body{
 }
 .first{
     /*background-color: red;*/
-    margin: 37px;
-    margin-top: 35px;
+   /* margin: 37px;
+    margin-top: 35px;*/ 
     padding-top: 140px;
     padding-left: 50px;
     color: antiquewhite;
@@ -97,14 +98,17 @@ body{
     color: azure;
     font-family:'Source Code Pro', monospace ;
 }
+
 .vidc{
     height:415px;
     padding: 0px 150px;
     position: relative;
 }
 .vidc iframe{
-    height:415px;
-    width:650px;
+    width: 100%;
+    max-width: 680px;
+    height: inherit;
+    min-width: 320px;
 }
 #sec2{
     height:1500px;
@@ -121,7 +125,8 @@ body{
 }
 .second{
     /*background-color: aqua;*/
-    height:1000px;
+    max-height:465px;
+    max-width: 850px;
     font-family: 'Abel', sans-serif;
 
     
@@ -160,6 +165,9 @@ body{
     padding-left: 50px;
     margin-right:50px;
 }
+.mt{
+    padding: 0px 70px;
+}
 .pt img{
     width: 250px;
    
@@ -194,6 +202,7 @@ body{
 }
 
 .sldr{
+
     height: 500px;
     width:900px;
     margin-left: 350px;
@@ -274,7 +283,99 @@ body{
     100%{
         left:0px;
     }
+    
 }
+
+
+/*@media (max-width:1355px)  {
+    .sldr{
+    
+        height: 300px;
+        width:450px;
+        margin-left: 20px;
+      
+        overflow: hidden;
+        display: flex;
+        
+    }
+    .phto img{
+        width: 150px;
+        height:222px;
+        position: relative;
+        -webkit-animation-name: slid;
+        -webkit-animation-duration: 30s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: normal;
+        -webkit-animation-play-state: running;
+    }
+    
+    @-webkit-keyframes slid{
+        0%{
+            left:0px;
+        }
+        5%{
+            left:-150px;
+        }
+        10%{
+            left:-300px;
+        }
+        15%{
+            left:-450px;
+        }
+        20%{
+            left:-600px;
+        }
+        25%{
+            left:-750px;
+        }
+        30%{
+            left:-900px;
+        }
+        35%{
+            left:-1050px;
+        }
+        40%{
+            left:-1200px;
+        }
+        45%{
+            left:-1350px;
+        }
+        50%{
+            left:-1500px;
+        }
+        55%{
+            left: -1650px;
+        }
+        60%{
+            left:-1800px;
+        }
+        65%{
+            left:-1950px;
+        }
+        70%{
+            left:-2100px;
+        }
+        75%{
+            left:-2250px;
+        }
+        80%{
+            left:-2400px;
+        }
+        85%{
+            left:-2550px;
+        }
+        90%{
+            left:-2700px;
+        }
+        100%{
+            left:0px;
+        }
+        
+    }
+        
+
+}*/
+
 #sec4{
     height:800px;
     /*background-color: papayawhip;*/
@@ -288,8 +389,8 @@ body{
     padding:20px;
     /*background-color: darkgoldenrod;*/
     height:700px;
-    padding: 160px 200px;
-    margin: 0px 200px;
+    padding: 160px 120px;
+    margin: 0px 180px;
     color: wheat;
 
 }
@@ -330,3 +431,105 @@ form{
     background-color: transparent;
     color: aliceblue;
 }
+@media (max-width:800px) {
+    .sidebar ul{
+        font-size: 13px;
+    }
+    .hd{
+        margin: 10px;
+        font-size: 10px;
+        padding: 0px;
+    }
+.sldr{
+        /* display: grid; */
+    /* margin-left: 62px; */
+    padding-left: 34px;
+    flex-wrap: wrap;
+    max-width: 350px;
+    height: 732px;
+    margin: 0px;
+}    
+.phto img{
+    -webkit-animation-iteration-count: 0;
+    max-width: 71px;
+    max-height: 95px;
+    margin: 0px 2px;
+    
+}
+
+.cvcontent{
+    
+}
+.shhd{
+    padding: 12px;
+}
+.vidc{
+    padding: 15px;
+    padding-top: 70px;
+}
+
+.vidc iframe{
+    max-height: 250px;
+}
+#sec2{
+    height: 1700px;
+}
+
+.imgc{
+    display: contents;
+}
+.pt h3,.pt h5{
+    display: none;
+}
+.pt{
+    padding-left: 70px;
+}
+.mt{
+
+    font-size: 0.90rem;
+}
+.imgc img{
+    width: 100px;
+}
+.mail{
+    margin: 0px;
+    padding: 0px;
+}
+form{
+    padding-top: 100px;
+}
+.dtls{
+    margin-left: 18px;
+}
+.f-nam{
+    margin-right: 20px;
+}
+.f-nam input{
+    width: 140px;
+}
+.s-nam input{
+    width: 140px;
+}
+.dtls input{
+    padding: 8px 0px;
+    
+}
+.mbox{
+    width: 312px;
+}
+.mbox input{
+    width: 100%;
+}
+.msgbox{
+    width: 314px;
+}
+.msgbox textarea{
+    width:100% ;
+}
+
+
+}
+
+
+
+
