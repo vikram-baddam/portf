@@ -529,7 +529,17 @@ form{
 
 
 }
-
+@media (max-width:380px){
+    body{
+        min-width: min-content;
+    }
+    .backimg{
+        min-width: 384px;
+    }
+    .image{
+        min-width: 384px;
+    }
+}
 
 
 
